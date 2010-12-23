@@ -1,0 +1,20 @@
+class CreateVideos < ActiveRecord::Migration
+  def self.up
+    create_table :videos do |t|
+      t.string :file
+      t.string :title
+      t.text :description
+      t.text :summary
+      t.string :thumbnail
+      t.string :format
+      t.string :status
+      t.boolean :active
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :videos
+  end
+end

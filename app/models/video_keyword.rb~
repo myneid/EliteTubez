@@ -1,0 +1,4 @@
+class VideoKeyword < ActiveRecord::Base
+	has_one :video, :include => :video
+	has_many :keyword, :include => :keyword
+end

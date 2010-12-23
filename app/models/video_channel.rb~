@@ -1,0 +1,4 @@
+class VideoChannel < ActiveRecord::Base
+	has_one :video, :include => :video
+	has_many :channel, :incldue => :channel
+end

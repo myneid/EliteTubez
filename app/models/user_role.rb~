@@ -1,0 +1,4 @@
+class UserRole < ActiveRecord::Base
+	has_one :user, :include => :user
+	has_many :video, :include => :video
+end

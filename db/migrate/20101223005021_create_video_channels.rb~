@@ -1,0 +1,14 @@
+class CreateVideoChannels < ActiveRecord::Migration
+  def self.up
+  def self.up
+	  create_table :video_channels do |t|
+		  t.integer :video_id
+		  t.integer :channel_id
+
+	end
+  end
+
+  def self.down
+	  drop_table :video_channels
+  end
+end
